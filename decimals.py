@@ -1,6 +1,17 @@
+numerator=input("What is the numerator of your fraction? ")
 denominator=input("What is the denominator of your fraction? ")
-print("your fraction is 1/{0} " .format(denominator))
-a = 1/int(denominator)
+print("your fraction is {1}/{0} " .format(denominator, numerator))
+if int(numerator)>int(denominator):
+    x = int(numerator)/int(denominator) - int(numerator)%int(denominator)/int(denominator)
+    numerator = int(numerator) - int(denominator)
+    print(x)
+else:
+    x= 0
+if int(denominator)%int(numerator) == 0:
+    denominator = int(denominator)/int(numerator)
+else:
+    print('finn')
+a = int(numerator)/int(denominator)
 print(a)
 b = int(denominator)
 pre = 0
@@ -42,8 +53,9 @@ while h == 0:
             else:
                 h = 0
                 j = 0
-            
+          
+  
 if j==1:
-    print("The fraction you entered has a preceding chunk with {0} digits, and a repeating chunk of {1} digits" .format(l,f+1-l))
+    print("The fraction you entered has {2} before the decimal, a preceding chunk with {0} digits, and a repeating chunk of {1} digits" .format(l,f+1-l,x))
 else:
-   print('finn')
+    print('finn')
