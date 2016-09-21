@@ -7,6 +7,14 @@ if int(numerator)>int(denominator):
     print(x)
 else:
     x= 0
+if int(numerator)==int(denominator):
+    x=1
+    h=1
+    j=1
+    l=0
+    f=0
+else:
+    print('finn')
 if int(denominator)%int(numerator) == 0:
     denominator = int(denominator)/int(numerator)
 else:
@@ -14,13 +22,16 @@ else:
 a = int(numerator)/int(denominator)
 print(a)
 b = int(denominator)
-pre = 0
-d = 9
-g = 1
-f = 0
-h = 0
-k=0
-l=0
+if h==0:
+    pre = 0
+    d = 9
+    g = 1
+    f = 0
+    h = 0
+    k=0
+    l=0
+else:
+    h=1
 while h == 0:
     f = f + 1
     g = 10**f + g
